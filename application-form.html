@@ -2,9 +2,43 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles.css">
         <title>Skills-HTML-CSS</title>
     </head>
     <body>
-        <!-- your html goes here -->
+        <div>            
+
+            <h1>Application Form</h1>
+            
+            <p>Hello Applicant! Thank you for applying to Ubermelon. We are excited that you would like to join our efforts in delivering the best melons to everyone worldwide. Please fill out the following form to start your application.</p>
+
+        </div>
+        <br>
+
+        <form action="/application" method="POST">
+
+            <label for="field-firstname">First Name:</label>
+            <input type="text" name="firstname" placeholder="First Name" id="field-firstname">
+            <br>
+
+            <label for="field-lastname">Last Name:</label>
+            <input type="text" name="lastname" placeholder="Last Name" id="field-lastname">
+            <br>
+            <br>
+
+            <label for = "job-type">Select which job you are applying for:</label>
+            <br>
+            <select name = "job" id="job-type">
+                <option value="" disabled selected>Select your option</option>
+                <option value="software">Software Engineer</option>
+                <option value="qa">QA Engineer</option>
+                <option value="product">Product Manager</option>
+            </select>
+            <br>
+            <br>
+
+            <input type="submit">
+
+        </form>
     </body>
 </html>
